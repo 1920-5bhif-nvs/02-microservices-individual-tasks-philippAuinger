@@ -9,13 +9,42 @@ import static org.hamcrest.CoreMatchers.is;
 @QuarkusTest
 public class ProductResourceTest {
 
-    @Test
+    /*@Test
     public void testHelloEndpoint() {
         given()
           .when().get("/hello")
           .then()
              .statusCode(200)
              .body(is("hello"));
+    }*/
+
+    @Test
+    public void testProductCount() {
+        given()
+                .when()
+                .get("/api/product/count")
+                .then()
+                .statusCode(200)
+                .body(is("5"));
     }
 
+    @Test
+    public void testAveragePrice() {
+        given()
+                .when()
+                .get("/api/product/avg/price")
+                .then()
+                .statusCode(200)
+                .body(is("2.188"));
+    }
+
+    @Test
+    public void testAverageQuantity() {
+        given()
+                .when()
+                .get("/api/product/avg/quantity")
+                .then()
+                .statusCode(200)
+                .body(is("81.8"));
+    }
 }
