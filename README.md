@@ -46,7 +46,7 @@ curl -H"Accept: application/json" http://localhost:8181/health
 
 ## Research
 
-###Istio
+### Istio
 
 is a Tool to manage multiple micro services. At a high level,    
 Istio helps reduce the complexity of these deployments, and eases the strain on your development teams.    
