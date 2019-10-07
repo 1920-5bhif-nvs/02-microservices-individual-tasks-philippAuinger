@@ -43,3 +43,18 @@ Abfragen ob der Service läuft:
 curl -H"Accept: application/json" http://localhost:8181/health
 ```
 
+
+## Research
+
+###Istio
+
+is a Tool to manage multiple micro services. At a high level,    
+Istio helps reduce the complexity of these deployments, and eases the strain on your development teams.    
+It is a completely open source service mesh that layers transparently onto existing distributed applications.     
+
+### Prometheus 
+ 
+is a cross-platform event monitoring tool written in Go.
+Which allows you to store metrics in a time series database and alert messages if needed. 
+It can also contain Grafanda to produce a dashboard
+
