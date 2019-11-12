@@ -23,7 +23,7 @@ public class ProductResource {
     //how many products?
     @GET
     @Path("/product/count")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     @Counted(name = "getNumberOfProducts" )
     @Timed(name= "timer", description = "How long it takes to perform this task", unit = MetricUnits.MILLISECONDS)
     public int getNumberOfProducts() {
@@ -33,7 +33,7 @@ public class ProductResource {
     //average price of products?
     @GET
     @Path("/product/avg/price")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     @Counted(name = "getAvgPriceOfProducts" )
     public double getAvgPrice() {
         return productService.getProduct().stream().mapToDouble(p -> p.getPrice()).average().getAsDouble();
@@ -42,7 +42,7 @@ public class ProductResource {
     //average quantity of products?
     @GET
     @Path("/product/avg/quantity")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     @Counted(name = "getAvgQuantityOfProducts" )
     public double getAvgQuantity() {
         return productService.getProduct().stream().mapToDouble(p -> p.getQuantity()).average().getAsDouble();

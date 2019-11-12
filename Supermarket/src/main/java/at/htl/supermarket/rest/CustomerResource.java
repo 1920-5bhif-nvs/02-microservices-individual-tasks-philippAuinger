@@ -21,7 +21,7 @@ public class CustomerResource {
     //how many customers?
     @GET
     @Path("/customer/count")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     @Counted(name = "getNumberOfCustomers" )
     @Timed(name= "timer", description = "How long it takes to perform this task", unit = MetricUnits.MILLISECONDS)
     public int getNumberOfCustomers() {
@@ -31,7 +31,7 @@ public class CustomerResource {
     //average "Bonuspunkte" of customers?
     @GET
     @Path("/customer/avg/loyalitypoints")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     @Counted(name = "getAvgLoyalityPointsOfCustomers" )
     public double getAvgLoyalityPoints() {
         return customerService.getCustomer().stream().mapToDouble(c -> c.getLoyalty_points()).average().getAsDouble();
