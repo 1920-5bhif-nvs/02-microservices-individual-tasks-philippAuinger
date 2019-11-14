@@ -1,6 +1,6 @@
 # 02-microservices-individual-tasks by Philipp Auinger
 
-WICHTIG: Mit diesem Projekt greife ich auf ein anderes zu! (https://github.com/1819-4bhif-nvs/1819-4bhif-nvs-assignment01-philippAuinger)
+WICHTIG: Mit diesem Projekt greife ich auf ein anderes zu! (https://github.com/1920-5bhif-nvs/01-assignment-quarkus-jpa-philippAuinger)
 Das Assignment 01, muss laufen, um die richtigen Ergebnisse zu bekommen.
 
 ## Erstellen:
