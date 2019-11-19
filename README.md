@@ -13,6 +13,11 @@ mvn io.quarkus:quarkus-maven-plugin:0.11.0:create \
 		-Dpath="hello"
 ```
 
+## Datenbank starten
+```
+docker run --name supermarket-postgres -p 5432:5432 -e POSTGRES_PASSWORD=passme -d postgres
+```
+
 ## Starten:
 ```
 mvn package
