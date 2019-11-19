@@ -30,6 +30,12 @@ mvn compile quarkus:dev
 mvn test quarkus:dev
 ```
 
+## Swagger - UI - Übersicht:
+    http://localhost:8181/swagger-ui
+
+### Installiert mit:     
+    mvn quarkus:add-extension -Dextensions="openapi"
+
 ## Pfade
 ```
 http://localhost:8181/api/product/count
